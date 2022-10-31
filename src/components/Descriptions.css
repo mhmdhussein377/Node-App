@@ -1,0 +1,40 @@
+.section-descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    background-color: transparent !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-overlay);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+.description-card-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 12px
+}
+
+.description-card-icon small {
+    text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+    .section-descriptions {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+}
